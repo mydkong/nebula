@@ -5,7 +5,7 @@ const fs=require('fs')
 const app=require('express')()
 
 app.get('/', (req, res) => res.send('Bot actif'));
-app.listen(443, () => console.log(`Serveur écoutant sur le port ${port}`));
+app.listen(443, () => console.log(`Serveur écoutant sur le port 443`));
 
 const client=new Client({
     intents: [
