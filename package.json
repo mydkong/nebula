@@ -1,0 +1,19 @@
+{
+  "name": "nebula-bot",
+  "version": "1.0.0",
+  "description": "The Discord bot for Nebula Shop & Rewards",
+  "license": "ISC",
+  "author": "Poulpe Glacé",
+  "type": "module",
+  "main": "index.cjs",
+  "scripts": {
+    "test": "node index.cjs"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
