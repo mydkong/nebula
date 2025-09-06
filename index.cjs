@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, SlashCommandBuilder, REST, Routes, EmbedBuilder, ChannelType, PermissionFlagsBits, ButtonBuilder, ButtonStyle, ActionRowBuilder, ActivityType, ModalBuilder, TextInputBuilder, TextInputStyle, StringSelectMenuBuilder, MessageFlags, InteractionType, TextDisplayBuilder, ContainerBuilder, SectionBuilder, ThumbnailBuilder, SeparatorBuilder, SeparatorSpacingSize, MediaGalleryItemBuilder, MediaGalleryBuilder, Events, Partials, AttachmentBuilder, StringSelectMenuOptionBuilder } = require('discord.js');
-const { token }=require('./token.json')
+require('dotenv').config()
+const token=process.env.TOKEN
 const fs=require('fs')
 
 const client=new Client({
