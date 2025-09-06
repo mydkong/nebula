@@ -2,6 +2,10 @@ const { Client, GatewayIntentBits, SlashCommandBuilder, REST, Routes, EmbedBuild
 require('dotenv').config()
 const token=process.env.TOKEN
 const fs=require('fs')
+const app=require('express')()
+
+app.get('/', (req, res) => res.send('Bot actif'));
+app.listen(port, () => console.log(`Serveur écoutant sur le port ${port}`));
 
 const client=new Client({
     intents: [
