@@ -4,6 +4,10 @@ const fs=require('fs')
 const path=require('path')
 const axios=require('axios')
 const { createCanvas, loadImage, GlobalFonts, Canvas }=require('@napi-rs/canvas')
+const app=require('express')()
+
+app.get('/', (req, res) => res.send('Bot is running!'));
+app.listen(443, () => console.log(`Listening on port 443`));
 
 GlobalFonts.registerFromPath(path.join(__dirname, 'trickster.ttf'), 'trickster')
 
